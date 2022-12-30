@@ -56,7 +56,7 @@ digits.forEach((button) => {
     } else if (oper_count > 1) {
       second_val = second_val * 10 + parseFloat(button.textContent);
       result = parseFloat(operate(current_oper, first_val, second_val));
-      //display.innerHTML = result;
+
       display.innerHTML = Math.round(result * 10000000) / 10000000;
       first_val = result;
     } else {
@@ -64,13 +64,6 @@ digits.forEach((button) => {
       result = parseFloat(operate(current_oper, first_val, second_val));
       first_val = result;
     }
-
-    console.log("\ndigits event");
-    console.log("First val:" + first_val);
-    console.log("Second val:" + second_val);
-    console.log("Result:" + result);
-    console.log("Current operator:" + current_oper);
-    console.log("Operation Count:" + oper_count);
   });
 });
 
@@ -83,48 +76,18 @@ operators.forEach((button) => {
     current_oper = "";
     current_oper += button.textContent;
 
-    /*if (oper_count > 1) {
-      console.log("\n inside the if condition");
-      second_val = parseInt(display.innerHTML);
-      console.log(
-        `The first value is ${first_val} and second value is ${second_val}`
-      );
-      result = parseInt(operate(current_oper, first_val, second_val));
-      display.innerHTML = result;
-      first_val = result;
-    }*/
     button.setAttribute("style", "font-weight:bold; opacity:90%;");
-
-    console.log("\noperators event");
-    console.log("First val:" + first_val);
-    console.log("Second val:" + second_val);
-    console.log("Result:" + result);
-    console.log("Current operator:" + current_oper);
-    console.log("Operation Count:" + oper_count);
   });
 });
 
 let equals = document.querySelector(".equal");
 
 equals.addEventListener("click", function () {
-  /*result = 0;
-  result = parseInt(
-    operate(current_oper, parseInt(first_val), parseInt(second_val))
-  );*/
-
-  //display.innerHTML = result;
   display.innerHTML = Math.round(result * 10000000) / 10000000;
 
   first_val = 0;
   second_val = 0;
   current_oper = "";
-
-  console.log("\nanswer event");
-  console.log("First val:" + first_val);
-  console.log("Second val:" + second_val);
-  console.log("Result:" + result);
-  console.log("Current operator:" + current_oper);
-  console.log("Operation Count:" + oper_count);
 });
 
 let clear = document.querySelector(".clear");
@@ -136,13 +99,6 @@ clear.addEventListener("click", function () {
   result = 0;
   current_oper = "";
   oper_count = 0;
-
-  console.log("\nclear event");
-  console.log("First val:" + first_val);
-  console.log("Second val:" + second_val);
-  console.log("Result:" + result);
-  console.log("Current operator:" + current_oper);
-  console.log("Operation Count:" + oper_count);
 });
 
 let perc = document.querySelector(".perc");
@@ -154,7 +110,7 @@ perc.addEventListener("click", function () {
   } else if (oper_count > 1) {
     second_val /= 100;
     result = parseFloat(operate(current_oper, first_val, second_val));
-    //display.innerHTML = result;
+
     display.innerHTML = Math.round(result * 10000000) / 10000000;
     first_val = result;
   } else {
@@ -173,7 +129,7 @@ neg.addEventListener("click", function () {
   } else if (oper_count > 1) {
     second_val *= -1;
     result = parseFloat(operate(current_oper, first_val, second_val));
-    //display.innerHTML = result;
+
     display.innerHTML = Math.round(result * 10000000) / 10000000;
     first_val = result;
   } else {

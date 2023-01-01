@@ -4,24 +4,24 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-image: url("./pikrepo.png");
+    background-image: url("./peakpx.jpg");
     background-size: cover;
 }
 
 .container {
-    margin-top: 12%;
+    margin-top: 8%;
     margin-left: 40%;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
     height: fit-content;
     width: fit-content;
     padding: 16px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(66, 224, 216);
+    background-color: rgb(88, 158, 224);
     color: white;
     border-radius: 12px;
-    gap: 6px;
-    box-shadow: 5px 10px 8px #4a54e4;
+    gap: 4px;
+    box-shadow: 5px 10px 8px #2936ee;
 }
 
 .display {
@@ -29,17 +29,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width: 310px;
+    width: 285px;
     padding: 0px 12px;
     font-size: 36px;
-    background-color: rgb(226, 62, 103);
+    background-color: rgb(65, 65, 65);
     color: white;
     border-radius: 4px;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
+    word-wrap: normal;
+    overflow-x: auto;
     max-height: 1.8em;
     line-height: 1.8em;
+    box-shadow: 2px 2px 2px #000;
 }
 
 .buttons {
@@ -58,13 +58,14 @@ body {
 }
 
 button {
-    width: 75px;
-    height: 75px;
-    margin: 8px 0;
+    width: 70px;
+    height: 70px;
+    margin: 4px 0;
     border: none;
     border-radius: 6px;
-    background-color: #434dda;
+    background-color: #51536e;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    box-shadow: 2px 2px 2px #000;
 }

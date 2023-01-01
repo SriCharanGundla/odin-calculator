@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./pikrepo.png");
+    background-size: cover;
+}
+
+.container {
+    margin-top: 12%;
+    margin-left: 40%;
+    height: fit-content;
+    width: fit-content;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66, 224, 216);
+    color: white;
+    border-radius: 12px;
+    gap: 6px;
+    box-shadow: 5px 10px 8px #4a54e4;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 310px;
+    padding: 0px 12px;
+    font-size: 36px;
+    background-color: rgb(226, 62, 103);
+    color: white;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 1.8em;
+    line-height: 1.8em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #434dda;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}

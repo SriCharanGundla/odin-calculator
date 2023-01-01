@@ -90,7 +90,7 @@ equals.addEventListener("click", function () {
 
 clear.addEventListener("click", function () {
   //Return all the variables to 0 and empty so the user can start fresh
-  display.innerHTML = "";
+  display.innerHTML = "0";
   displayValue = "";
   first_num = 0;
   operator = "";
